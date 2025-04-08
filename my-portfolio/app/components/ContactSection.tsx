@@ -5,10 +5,10 @@ export default function ContactSection() {
         <p className="text-gray-700">Feel free to reach out to me!</p>
         <div className="mt-4">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:adam20031111@gmail.com"
             className="text-blue-600 hover:underline"
           >
-            your.email@example.com
+            adam20031111@gmail.com
           </a>
         </div>
         <div className="flex justify-center space-x-4 mt-4">
