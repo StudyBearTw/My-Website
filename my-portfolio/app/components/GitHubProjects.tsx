@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 interface Repo {
   id: number;
@@ -31,12 +32,19 @@ export default function GitHubProjects() {
   }, []);
 
   return (
-    <section>
-      <h2 className="text-3xl font-bold text-center mb-6">My GitHub Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section className="bg-gray-50 py-20 px-6">
+      <h2 className="text-4xl font-bold text-center mb-12">💻 我的 GitHub 專案</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {repos.map((repo) => (
-          <div key={repo.id} className="p-4 border rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold">
+          <motion.div
+            key={repo.id}
+            className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3 className="text-2xl font-semibold mb-2">
               <a
                 href={repo.html_url}
                 target="_blank"
@@ -46,11 +54,11 @@ export default function GitHubProjects() {
                 {repo.name}
               </a>
             </h3>
-            <p className="text-gray-600">
-              {repo.description || "No description"}
+            <p className="text-gray-600 mb-4">
+              {repo.description || "No description available"}
             </p>
-            <span className="text-sm text-gray-500">{repo.language}</span>
-          </div>
+            <span className="text-sm text-gray-500">{repo.language || "N/A"}</span>
+          </motion.div>
         ))}
       </div>
     </section>
