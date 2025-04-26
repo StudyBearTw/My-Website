@@ -62,7 +62,7 @@ const ProfileHeader = () => {
           className="rounded-full mx-auto shadow-md"
         />
         <h1 className="text-5xl font-semibold mt-6">薛恩明</h1>
-        <p className="text-lg text-gray-600 mt-2">Software Engineer & AI Developer</p>
+        <p className="text-lg text-gray-600 mt-2">Student of NKNU SE</p>
         <button
           ref={buttonRef}
           onClick={handleOpenModal}

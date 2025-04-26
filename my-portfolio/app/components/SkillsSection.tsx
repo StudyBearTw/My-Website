@@ -17,7 +17,7 @@ export default function SkillsSection() {
           >
             <h3 className="text-2xl font-semibold mb-4">💻 技術能力</h3>
             <p className="text-lg leading-relaxed">
-              Python, Java, React, Node, HTML, JavaScript, CSS, SQL, Git, GitHub
+              Python, Java, React, Node,Next, HTML, JavaScript, CSS, SQL, Git, GitHub
             </p>
           </motion.div>
 
@@ -31,7 +31,8 @@ export default function SkillsSection() {
           >
             <h3 className="text-2xl font-semibold mb-4">🌍 語言能力</h3>
             <p className="text-lg leading-relaxed">
-              TOEIC 760，能閱讀技術文件並與國際開發者溝通
+              TOEIC 760 (考試時間：2022)<br />
+              能閱讀技術文件並與國際開發者溝通
             </p>
           </motion.div>
 
@@ -45,7 +46,11 @@ export default function SkillsSection() {
           >
             <h3 className="text-2xl font-semibold mb-4">🚀 目前學習目標</h3>
             <p className="text-lg leading-relaxed">
-              語言模型辨識假新聞、全端應用整合、LSTM 股市預測
+              語言模型辨識假新聞<br />
+              全端應用整合<br />
+              自然語言處理（NLP）<br />
+              深度學習（DL）<br />
+              LSTM 股市預測
             </p>
           </motion.div>
         </div>

@@ -15,10 +15,12 @@ export default function HomePage() {
 
       {/* Intro, Experience, and Skills Section */}
       <main className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8 items-start">
           <ExperienceSection />
           <IntroSection />
+          <section className = "flex flex-col bg-gray-50 p-6 rounded-lg shadow-md min-h-[300px]">
           <SkillsSection />
+          </section>
         </div>
       </main>
 
